@@ -243,7 +243,7 @@ function addToSummary(form){
             if(choices[j].isCorrectAnswer()){
               header.setFontWeight("bold");
             }
-            MSumSheet.getRange(curCol+"3").setFormula("=if(isna("+curCol+"5),0,counta("+curCol+"5:"+curCol+"))")
+            MSumSheet.getRange(curCol+"3").setFormula("=if(isnumber("+curCol+"5),counta("+curCol+"5:"+curCol+"), 0)")
             MSumSheet.getRange(curCol+"4").setValue("=if(sum("+startCol+"3:"+endCol+"3)=0, NA(), "+curCol+"3/(sum("+startCol+"3:"+endCol+"3)))")
             MSumSheet.getRange(curCol+"5").setFormula("=query(importRange(\""+ss.getUrl()+"\",\"Form Responses 1!A2:"+sourcCol+"\"),\"select Col2 where Col"+(k+4)+" = '"+answer+"'\")");
             //Logger.log("query for "+question+", "+answer+": "+query)
