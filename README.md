@@ -21,7 +21,7 @@ https://docs.google.com/forms/d/1IKO8rtJ2fWd41IECjkS_B06PWMYHGf8zF68Oq89N8k4/edi
 
 # How to Install
 1. Make a copy of this template 
-  - https://docs.google.com/spreadsheets/d/1bnAGLxQgV5LOPX5CdPuxqbKiKLNN8QbJpcMIu5gQHzY/edit?usp=sharing 
+    - https://docs.google.com/spreadsheets/d/1bnAGLxQgV5LOPX5CdPuxqbKiKLNN8QbJpcMIu5gQHzY/edit?usp=sharing 
 2. On the spreadsheet, go to Tools and select Script Editor. There are a few variables at the top of Code.gs and CreateQuiz.gs that need to be initialized, so fill them in.
 3. To set up OAuth2 for connecting your Google Drive to GitHub. Follow the directions on this website starting from Step 3 https://www.benlcollins.com/apps-script/oauth-github/
     - You don’t need to copy the code that they give, because the code in this script follows that format
