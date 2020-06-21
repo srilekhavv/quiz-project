@@ -32,7 +32,7 @@ https://docs.google.com/forms/d/1IKO8rtJ2fWd41IECjkS_B06PWMYHGf8zF68Oq89N8k4/edi
     - This will update your files, but it will not create/update the quizzes associated with those files.
     - If you deleted a file, and it does not change in the main Spreadsheet, then you can remove it manually from the Spreadsheet. That will not mess up anything
     - If you add images, make sure the are jpg, otherwise they will not be copied over
-6. To create new quizzes for newly created files, highlight the files you want quizzes for with your cursor, and go to Script Menu and select Create Quizzes. 
+6. To create new quizzes for files, highlight the files you want quizzes for with your cursor, and go to Script Menu and select Create Quizzes in Range. The links and ids for the new quizzes will replace the old ones, if there are any.
 
 # Summary Sheet
 The main spreadsheet comes with a summary sheet that aggregates response datas from every questions. 
