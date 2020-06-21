@@ -45,6 +45,9 @@ function findFolderID(){
   if (root.hasNext()){
     temp1= root.next();
   }
+  else{
+    temp1 = DriveApp.createFolder(quizRepo)
+  }
   var folder = temp1.getId();
   var fI = PropertiesService.getScriptProperties().setProperty("quizFolderId", folder);
 }
@@ -109,17 +112,6 @@ function getQuizFolder(){
 
   return quizFolder;
 }
-
-function getSourceFolder(){
-  var sProperties = PropertiesService.getScriptProperties();
-  var sourceFolderId = sProperties.getProperty("sourceFolderId");
-  var sourceFolder = DriveApp.getFolderById(sourceFolderId)
-  if(!sourceFolder){
-    sourceFolder = DriveApp.getRootFolder()
-  }
-  return sourceFolder;
-}
-
 
 
 
